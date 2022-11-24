@@ -70,7 +70,7 @@ main {
   margin: 0;
   .wave {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
   }
 }
 
@@ -130,8 +130,53 @@ main {
 
 .end {
   background-color: c.$text;
-  color: c.$text_light;
   margin: 0;
+  padding: 0 2em;
+  h3,
+  p {
+    color: c.$text_light;
+    text-align: left;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  p {
+    margin-bottom: 2em;
+  }
+  input {
+    background-color: c.$text_light;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+  }
+  .end__subscribe {
+    position: relative;
+    margin-bottom: 7em;
+  }
+  .btn_subscribe {
+    width: 50%;
+    height: 40px;
+    background-color: c.$button;
+    color: c.$text_light;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+  .end__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5em;
+    p {
+      margin: 0;
+    }
+  }
+  .end__social {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .attribution {
