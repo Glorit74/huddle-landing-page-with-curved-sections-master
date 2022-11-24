@@ -10,7 +10,7 @@
 
   background: transparent;
 
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
 
   text-decoration: none;
 }
@@ -29,7 +29,7 @@ a img {
 img,
 picture {
   max-width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 button,

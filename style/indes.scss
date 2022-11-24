@@ -1,0 +1,143 @@
+@use "colors" as c;
+@use "default";
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: c.$text;
+  margin-bottom: 1.15em;
+}
+
+p {
+  line-height: 1.75;
+  margin-bottom: 3em;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.btn {
+  font-size: 0.75em;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 3em 7em;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .btn_try {
+    width: 100px;
+    background-color: c.$white;
+    color: c.$button;
+    padding: 5px;
+    border: 2px c.$button solid;
+    opacity: 0.8;
+  }
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3em;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    margin: 25px 0;
+  }
+}
+
+.ready_to_build {
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  .wave {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.btn_get {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 6em;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: c.$button;
+  color: c.$white;
+
+  box-shadow: 0 3px 5px -2px gray;
+
+  &:hover {
+    background-color: c.$button_active;
+  }
+}
+
+.container {
+  width: min-content;
+  margin-bottom: 5em;
+}
+
+.communities_data,
+.messages_data {
+  font-weight: 700;
+  color: c.$text;
+  text-align: center;
+}
+
+.communities_data {
+  font-size: 3.5em;
+  @supports (font-size: max(19cqi, 3.5em)) {
+    font-size: max(19cqi, 3.5em);
+  }
+}
+
+.messages_data {
+  font-size: 3em;
+  @supports (font-size: max(15cqi, 3em)) {
+    font-size: max(15cqi, 3em);
+  }
+}
+
+.data {
+  justify-content: center;
+  p {
+    color: gray;
+    margin: 0;
+    font-size: 0.9em;
+    @supports (font-size: max(4cqi, 0.9em)) {
+      font-size: max(4cqi, 0.9em);
+    }
+  }
+}
+
+.end {
+  background-color: c.$text;
+  color: c.$text_light;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
