@@ -49,18 +49,27 @@ select {
   border-radius: 0;
 }
 
+body {
+  height: 100%;
+}
+
 h1,
 h2,
 h3,
 p {
   text-align: center;
   color: hsl(192deg, 100%, 9%);
-  margin-bottom: 1.15em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1em 30px 1em;
 }
 
 p {
+  margin: 1em 50px 3em;
   line-height: 1.75;
-  margin-bottom: 3em;
 }
 
 h1,
@@ -99,7 +108,6 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 3em;
 }
 main section {
   display: flex;
@@ -107,8 +115,11 @@ main section {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 100vh;
-  margin: 25px 0;
+  height: 100%;
+}
+main .image_container {
+  width: 80%;
+  margin-top: 50px;
 }
 
 .ready_to_build {
@@ -139,7 +150,21 @@ main section {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  margin-bottom: 5em;
+}
+
+.blue {
+  position: relative;
+  background-color: hsl(207deg, 100%, 98%);
+  margin-bottom: 100px;
+}
+
+.img_bottom {
+  position: absolute;
+}
+
+.container_top_wave {
+  width: 100%;
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 .communities_data,
