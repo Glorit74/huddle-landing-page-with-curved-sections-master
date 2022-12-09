@@ -122,14 +122,14 @@ main .image_container {
   margin-top: 50px;
 }
 
+.data .container {
+  margin-bottom: 4em;
+}
+
 .ready_to_build {
   position: relative;
   justify-content: center;
-  margin: 0;
-}
-.ready_to_build .wave {
-  position: absolute;
-  bottom: -2px;
+  margin: 10em 0 2em;
 }
 
 .btn_get {
@@ -156,6 +156,10 @@ main .image_container {
   position: relative;
   background-color: hsl(207deg, 100%, 98%);
   margin-bottom: 100px;
+}
+
+.img_top {
+  transform: translateY(10px);
 }
 
 .img_bottom {
@@ -210,6 +214,10 @@ main .image_container {
   background-color: hsl(192deg, 100%, 9%);
   margin: 0;
   padding: 0 2em;
+}
+.end .wave {
+  transform: scaleX(1.2);
+  background-color: white;
 }
 .end h3,
 .end p {
