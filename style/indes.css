@@ -129,7 +129,7 @@ main .image_container {
 .ready_to_build {
   position: relative;
   justify-content: center;
-  margin: 10em 0 2em;
+  margin: 10em 0;
 }
 
 .btn_get {
@@ -223,9 +223,11 @@ main .image_container {
 .end p {
   color: hsl(207deg, 100%, 98%);
   text-align: left;
+  margin: 0;
 }
 .end h3 {
   text-transform: uppercase;
+  margin-top: 2em;
 }
 .end p {
   margin-bottom: 2em;
@@ -236,6 +238,9 @@ main .image_container {
   height: 40px;
   border-radius: 5px;
   margin-bottom: 1em;
+}
+.end .logo_img path {
+  fill: hsl(0deg, 0%, 100%);
 }
 .end .end__subscribe {
   position: relative;
