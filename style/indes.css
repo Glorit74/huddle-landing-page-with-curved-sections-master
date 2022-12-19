@@ -268,12 +268,16 @@ main .image_container {
 .end .end__social {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin: 50px 0 30px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: hsl(192deg, 100%, 9%);
+  color: hsl(207deg, 100%, 98%);
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .attribution a {
